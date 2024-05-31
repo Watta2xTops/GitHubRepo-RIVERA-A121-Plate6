@@ -9,7 +9,7 @@ public class Problem2 {
         Map<String, Integer> edgeCount = new HashMap<>();
 
         for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) { // j starts from i+1 to avoid duplicate edges in an undirected graph
+            for (int j = i + 1; j < n; j++) { 
                 if (adjMatrix[i][j] > 0) {
                     String edge = i + "-" + j;
                     edgeCount.put(edge, adjMatrix[i][j]);
